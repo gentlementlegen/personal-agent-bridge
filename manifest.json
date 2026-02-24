@@ -2,7 +2,9 @@
   "name": "@ubiquity-os/personal-agent-bridge",
   "short_name": "gentlementlegen/personal-agent-bridge@feat/320-workflow-artifact-migration",
   "description": "Forwards personal commands in comments to respective user's personal agent plugin",
-  "ubiquity:listeners": [],
+  "ubiquity:listeners": [
+    "issue_comment.created"
+  ],
   "skipBotEvents": true,
   "configuration": {
     "default": {},
